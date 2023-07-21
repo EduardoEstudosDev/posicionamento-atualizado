@@ -1,0 +1,137 @@
+/* estilos gerais */
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  background-color: #e7e7e7;
+  gap: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 60px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 100px;
+  max-width: 1000px;
+}
+
+li,
+a {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 2rem;
+  text-align: end;
+}
+
+/* estilos específicos */
+a {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+.navbar a:hover {
+  outline: 2px solid #e21;
+}
+
+.apres {
+  background-color: #fff;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  padding: 40px;
+  position: relative;
+}
+.apres::after {
+  content: "";
+  width: 65px;
+  height: 4px;
+  background-color: #e21;
+  position: absolute;
+  top: 2rem;
+  right: -2rem;
+}
+
+.apres p {
+  font-size: 1.3rem;
+  text-align: end;
+}
+.apres a {
+  background-color: #e21;
+  border-radius: 4px;
+  color: #fff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+.apres a:hover {
+  background-color: #900;
+}
+
+.conteiner-vantagens {
+  display: grid;
+  background-image: url("./img/onda.svg");
+}
+
+.vantagens {
+  align-self: center;
+  color: #bbb;
+  font-size: 64px;
+  padding: 30px;
+  text-align: end;
+  text-transform: uppercase;
+}
+.conteiner-descricao {
+  display: grid;
+  background-color: #fff;
+  padding: 50px;
+}
+.descricao {
+  display: grid;
+  background-color: #fff;
+  gap: 10px;
+  padding: 20px;
+  border-left: 5px solid transparent;
+}
+.descricao:nth-child(odd) {
+  background-color: #e7e7e7;
+}
+.descricao:hover {
+  border-left: 5px solid #e21;
+}
+
+.descricao p {
+  grid-column: 2;
+}
+
+footer {
+  display: block;
+  background-color: #fff;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.3rem;
+}
